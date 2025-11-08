@@ -1,8 +1,8 @@
 
 <body>
     <ul>
-    @for ($i=0; $i<100; $i=$i+1)
-        <li>{{ $i }}</li>
-    @endfor
+        @foreach ($users as $user)
+            <li>User Name Is {{ $user ['name'] }} And City Is {{ $user ['city'] }}</li>
+        @endforeach
     </ul>
 </body>
